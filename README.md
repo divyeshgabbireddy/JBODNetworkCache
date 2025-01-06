@@ -19,12 +19,19 @@ Network connectivity for remote operations
 Enough memory for cache operations
 
 Building and Testing
+
 bash
+
 make clean
+
 make
+
 ./tester
 
 For network testing:
+
 bash
+
 ./jbod_server
+
 ./tester -w traces/random-input -s 1024
