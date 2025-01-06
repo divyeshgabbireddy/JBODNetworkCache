@@ -9,10 +9,10 @@ Key Features
 The storage system lets you read and write data at the block level with permission controls. It uses a caching system with a Most Recently Used (MRU) policy to speed things up by reducing how often it needs to access the disks. The system keeps data consistent by using write-through caching.
 The networking part lets you access storage remotely through a custom client-server setup, handling all the communication between clients and the storage system securely and efficiently.
 
-Technicals
+Technicals:
 The system works with 256-byte blocks across 16 disks, handling read/write operations carefully to avoid errors. The cache can be sized from 2 to 4096 entries and keeps track of how well it's performing. Network operations use a special packet format to handle remote storage access efficiently.
 
-Requirements
+Requirements:
 C compiler with C11 support
 POSIX-compliant operating system
 Network connectivity for remote operations
